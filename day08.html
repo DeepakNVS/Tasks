@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form</title>
+</head>
+<body>
+    <form action="admission" method="post">
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" pattern="[a-zA-Z]{4,10}" required><br>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9@\.]+" required><br>
+        </div>
+        <div>
+            <label for="number">Number:</label><br>
+            <input type="tel" id="number" name="number" pattern="[0-9]{10}" required><br>
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9].{8}" required><br>
+        </div>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>

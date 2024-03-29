@@ -1,0 +1,114 @@
+.topnav {
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow:visible;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.topnav nav{
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background: -webkit-linear-gradient(left, transparent, black, black, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, transparent, black,black, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, transparent, black,black, transparent); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, transparent, black, black, transparent); /* Standard syntax (must be last) */
+    width:100%;
+}
+
+.topnav nav div{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5% ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700; /* this is futura heavy*/
+    width:11.25%;
+    letter-spacing: 2px;
+    word-wrap:true;
+    display:inline-block;
+    vertical-align: top;
+    text-align: center;
+    /*line-height: 5em;*/
+}
+
+.notlink {
+    width:30.4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: inline-block;
+}
+
+.notlink img {
+    width: 100%;
+}
+
+.topnav nav .link:hover {
+    color: #008ed2;
+}
+
+.icon {
+    display: none;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media only screen and (max-width: 767px) {
+    .myTopnav a.link {display: none;}
+    
+    .topnav nav div{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .icon {
+        position: relative;
+        float: right;
+        display: inline-block;
+    }
+    
+    .notlink {
+        width: 70%;
+        float: left;
+    }
+    .notlink img {
+        display: inline-block;
+        max-width:100%;
+        max-height:75px;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .myTopnav.responsive {position: relative;}
+    .myTopnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .myTopnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}

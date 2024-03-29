@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Login Form</title>
+ <style>
+ body{
+ font-family: Arial, sans-serif;
+ }
+
+ .login-form{
+ width: 300px;
+ margin: 0 auto;
+ }
+
+ label{
+ display: block;
+ margin-top: 20px;
+ }
+
+ input[type="text"], input[type="password"], input[type="email"]{
+ width: 100%;
+ padding: 10px;
+ margin-top: 5px;
+ }
+
+ input[type="submit"]{
+ width: 100%;
+ padding: 10px;
+ margin-top: 20px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ }
+
+ .google-login{
+ margin-top: 20px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+ <div class="login-form">
+ <h2>Login Form</h2>
+ <form>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email">
+ <label for="username">Username:</label>
+ <input type="text" id="username" name="username">
+ <label for="password">Password:</label>
+ <input type="password" id="password" name="password">
+ <input type="submit" value="Login">
+ </form>
+ <div class="google-login">
+ <p>Or sign in with:</p>
+ <a href="#"><img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" alt="Sign in with Google"></a>
+ </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+  }
+  
+  header {
+    background-color:  purple;
+    text-align: center;
+  }
+  
+  nav ul {
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  section h3{
+    color: white;
+  }
+  section li{
+    color: aliceblue;
+  }
+  section h2 {
+    font-size: 2rem;
+    color: tomato;
+  }
+  
+  section p {
+    color: aliceblue;
+    font-style: italic;
+  }
+  
+  footer {
+    background-color: lightgray;
+  }

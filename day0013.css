@@ -1,0 +1,28 @@
+header, section, article, aside {
+    text-align: center; /* center the text */
+    padding: 10px; /* add spacing around the borders */
+}
+
+.border-style-1 {
+    border-style: solid; /* change border style */
+    border-width: 5px; /* change border width */
+    border-color: #800000; /* change border color */
+}
+
+.border-style-2 {
+    border-style: dotted; /* change border style */
+    border-width: 5px; /* change border width */
+    border-color: #008000; /* change border color */
+}
+
+.border-style-3 {
+    border-style: dashed; /* change border style */
+    border-width: 5px; /* change border width */
+    border-color: #000080; /* change border color */
+}
+
+.border-style-4 {
+    border-style: double; /* change border style */
+    border-width: 10px; /* change border width */
+    border-color: #808000; /* change border color */
+}

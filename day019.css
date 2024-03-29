@@ -1,0 +1,43 @@
+body { 
+    background-color: whitesmoke; 
+    color: blue; 
+    text-align: center; 
+} 
+
+p::selection { 
+    color: red; 
+    background-color: green; 
+    font-size: 30px; 
+} 
+
+::selection { 
+    color: green; 
+    background-color: red; 
+    font-size: 30px; 
+} 
+
+ul { 
+    width: 40px; 
+} 
+
+ul li::marker { 
+    color: red; 
+    font-size: 30px; 
+} 
+
+p::after { 
+    content: '"'; 
+    color: red; 
+    font-size: 30px; 
+} 
+
+h4::before { 
+    content: '"'; 
+    color: red; 
+    font-size: 30px; 
+} 
+
+h3::first-letter { 
+    color: Red; 
+    font-size: 30px; 
+    font-weight: bold; 

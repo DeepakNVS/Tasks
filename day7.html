@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-image: url('bg1.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.container {
+			width: 300px;
+			padding: 16px;
+			background-color: white;
+			margin: 0 auto;
+			margin-top: 100px;
+			border: 1px solid black;
+			border-radius: 4px;
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+		.signupbtn {
+			background-color: #008CBA;
+		}
+		.signupbtn:hover {
+			opacity: 0.8;
+		}
+		.forgotbtn {
+			color: blue;
+			text-decoration: none;
+		}
+		.forgotbtn:hover {
+			color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <button id="loginbtn">Login</button>
+      <button type="button" href='signup.html'">Sign Up</button>
+      <a class="forgotbtn" href="forgotpassword.html">Forgot Password?</a>
+    </div>
+    <script>
+       document.getElementById('loginbtn').addEventListener('click', function(event) {
+       event.preventDefault()
+       window.location.href = 'loggedin.html';
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* Universal selector */
+* {
+	box-sizing: border-box;
+}
+
+/* Type selectors */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1rem 0;
+}
+
+/* Class selectors */
+.main-heading {
+	color: #333;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+section {
+	margin: 2rem 0;
+	padding: 1rem;
+	border: 1px solid #ccc;
+}
+
+#home h2 {
+	color: #f00;
+}
+
+#about h2 {
+	color: #0f0;
+}
+
+#contact h2 {
+	color: #00f;
+}
+
+/* ID selectors */
+#home {
+	background-color: #f00;
+}
+
+#about {
+	background-color: #0f0;
+}
+
+#contact {
+	background-color: #00f;
+}
+
+/* Attribute selectors */
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}

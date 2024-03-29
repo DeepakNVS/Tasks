@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .main-content .article {
+            background-color: #f2f2f2;
+            padding: 20px;
+            height: auto; /* Change this line */
+            /* overflow: hidden; */ /* Remove this line */
+            /* text-overflow: ellipsis; */ /* Remove this line */
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+        }
+        
+        .sidebar {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><u>The Hindu</u></h1>
+        </div>
+        <div class="main-content">
+            <div class="article">
+                <h2><u>Article 1: Cricket</u></h2>
+                <img src="cri.jpg" alt="Article 1 Image">
+                <p>Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. Two players from the batting team (the striker and nonstriker) stand in front of either wicket, with one player from the fielding team (the bowler) bowling the ball towards the striker's wicket from the opposite end of the pitch. The striker's goal is to hit the bowled ball and then switch places with the nonstriker, with the batting team scoring one run for each exchange. Runs are also scored when the ball reaches or crosses the boundary of the field or when the ball is bowled illegally.</p>
+            </div>
+            <div class="article">
+                <h2><u>Article 2: Football</u></h2>
+                <img src="foot.jpg" alt="Article 2 Image">
+                <p>Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used. Sports commonly called football include association football (known as soccer in Australia, Canada, South Africa, the United States, and sometimes in Ireland and New Zealand); Australian rules football; Gaelic football; gridiron football (specifically American football, Arena football, or Canadian football); International rules football; rugby league football; and rugby union football.[1] These various forms of football share, to varying degrees, common origins and are known as "football codes"</p>
+            </div>
+            <div class="article">
+                <h2><u>Article 3: Hockey</u></h2>
+                <img src="hocky.jpg" alt="Article 3 Image">
+                <p>Hockey is a term used to denote a family of various types of both summer and winter team sports which originated on either an outdoor field, sheet of ice, or dry floor such as in a gymnasium. While these sports vary in specific rules, numbers of players, apparel, and playing surface, they share broad characteristics of two opposing teams using a stick to propel a ball or disk into a goal.</p>
+            </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+        </div>
+        <div class="footer">
+            <p>Footer &copy; 2023</p>
+        </div>
+    </div>
+</body>
+</html>
