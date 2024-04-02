@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="day021.css">
+  </head>
+  <body >
+    <carousel>
+      <div class="form-container">
+        <h1 class="title">FORM 2K24</h1>
+      <form class="carousel-item">
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required>
+        </div>
+        <div class="form-control">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" required>
+        </div>
+        <!-- <div class="form-control">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-control">
+          <label for="address">Address:</label>
+          <textarea id="address" required></textarea>
+        </div> -->
+        <div class="form-control">
+          <label for="gender">Gender:</label>
+          <select id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" required>
+        </div>
+        <div class="form-control">
+          <label for="country">Country:</label>
+          <select id="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="inr">India</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+          </select></div>
+        <!-- <div class="form-control">
+          <label for="bio">Bio:</label>
+          <textarea id="bio" required></textarea>
+        </div> -->
+        <div class="form-control">
+          <label for="terms">
+            I have read and agree to the
+            <a href="#">Terms and Conditions</a
+            >
+          </label>
+          <input type="checkbox" id="terms" required>
+        </div>
+        <div class="form-control">
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+      <form class="carousel-item">
+      </form>
+      </div>
+    </carousel>
+  </body>
+</html>
